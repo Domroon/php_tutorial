@@ -13,14 +13,28 @@
         echo "<p>This is my site</p>";
     ?>
 
+
+    
     <article>
-    <?php
+    <?php 
+    //Variables
         $characterName = "Tom";
-        $characterAge = 42;
+        $characterAge = 44;
         echo "There once was a man named $characterName <br>";
         echo "Hew as $characterAge years old <br>";
         echo "He really liked the name $characterName <br>";
         echo "But he didn't like being $characterAge <br>";
+    ?>
+    </article>
+
+    
+    <article>
+    <?php
+    //Datatypes
+        $phrase = "To be or not to be"; //String
+        $age = 30; //Integer
+        $gpa = 3.7; //Float
+        $isMale = false; //Boolean
     ?>
     </article>
 </body>
