@@ -146,6 +146,22 @@
         ?>
     </article>
 
+    <article>
+    <h2>URL Parameters</h2> <!--For Informations that should be public available (not secure)-->
+    
+        <form action="site.php" method="get">
+        Name: <input type="text" name="name"> <br>
+        <input type="submit">
+        </form>
+
+        <?php
+            echo $_GET["name"]; //can edit in URL 
+            echo"<br>";
+            echo $_GET["age"]; // you can add this via the URL Parameter (add &age=42)
+        ?>
+    
+    </article>
+
 
 </body>
 </html>
