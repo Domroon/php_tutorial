@@ -37,5 +37,32 @@
         $isMale = false; //Boolean
     ?>
     </article>
+
+    <article>
+    <h2>Work With Strings</h2>
+    <?php
+
+        $phrase = "Giraffe Academy";
+        echo $phrase; //print String
+        echo "<br>";
+        echo strtolower($phrase); //convert to lower case
+        echo "<br>";
+        echo strtoupper($phrase); //conver to upper case 
+        echo "<br>";
+        echo strlen($phrase); //get String length
+        echo "<br>";
+        echo $phrase[0]; //get first character
+        echo "<br>";
+        echo $phrase[1]; //get second character
+        echo "<br>";
+        echo str_replace("Giraffe", "Panda", $phrase); //replace first String with second String in the third String
+        echo "<br>";
+        echo substr($phrase, 8); //Get a the String behind the index-number
+        echo "<br>";
+        echo substr($phrase, 8, 3); //Get three letters behind index 8 of the String
+
+    ?>
+    </article>
+
 </body>
 </html>
