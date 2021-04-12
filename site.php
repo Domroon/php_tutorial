@@ -103,10 +103,19 @@
         echo ceil(3.1);
         echo "<br>";
         echo floor(3.9);
-        
-
     ?>
     </article>
 
+    <article>
+    <h2>Getting User Input</h2>
+        <form action="site.php" method="get">
+            Email: <input type="text" name="email">
+            <input type="submit">
+        </form>
+        <br>
+        <?php
+            echo $_GET["email"]
+        ?>
+    </article>
 </body>
 </html>
