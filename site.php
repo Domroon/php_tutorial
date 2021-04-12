@@ -114,8 +114,38 @@
         </form>
         <br>
         <?php
-            echo $_GET["email"]
+            echo $_GET["email"];
         ?>
     </article>
+
+    <article>
+    <h2>Simple Calculator</h2>
+        <form action="site.php" method="get">
+            First Number: <input type="text" name="first_number"><br>
+            Second Number: <input type="text" name="second_number"><br>
+            Choose an Operator:<br>
+            <input type="radio" id="plus" name="operator" value="+">
+            <label for="plus">+</label><br>
+            <input type="radio" id="minus" name="operator" value="-">
+            <label for="minus">-</label><br>
+            <input type="submit">
+        </form>
+        <br>
+        <?php
+            $first = $_GET["first_number"];
+            $second = $_GET["second_number"];
+            $op = $_GET["operator"];
+            $result = 0;
+            if($op == '+'){
+                $result = $first + $second;
+            }
+            else {
+                $result = $first - $second;
+            }
+            echo "Result: $result";
+        ?>
+    </article>
+
+
 </body>
 </html>
