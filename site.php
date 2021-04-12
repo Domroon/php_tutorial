@@ -64,5 +64,49 @@
     ?>
     </article>
 
+    <article>
+    <h2>Work With Numbers</h2>
+    <?php
+        echo 40;      //positive Integer
+        echo "<br>";
+        echo -40;     //Negative Integer
+        echo "<br>";
+        echo 5.7 * 9; //Mulplication
+        echo "<br>";
+        echo 10 % 3; //Modulo
+        echo "<br>";
+        echo 4 + 5 *10; //Math rule 'point before line'
+        echo "<br>";
+        $num = 10;
+        echo $num * $num;
+        $num++;
+        echo "<br>";
+        echo $num;
+        $num += 2;
+        echo "<br>";
+        echo $num;
+        echo "<br>";
+        echo abs(-100);
+        echo "<br>";
+        echo pow(2,3);
+        echo "<br>";
+        echo sqrt(9);
+        echo "<br>";
+        echo max(42, 10);
+        echo "<br>";
+        echo min(42, 10);
+        echo "<br>";
+        echo round(3.2);
+        echo "<br>";
+        echo round(3.5);
+        echo "<br>";
+        echo ceil(3.1);
+        echo "<br>";
+        echo floor(3.9);
+        
+
+    ?>
+    </article>
+
 </body>
 </html>
