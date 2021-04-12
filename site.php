@@ -162,6 +162,20 @@
     
     </article>
 
+    <article>
+    <h2>POST VS GET</h2> 
+    
+        <form action="site.php" method="post"> <!-- Not shown in the URL (more secure) -->
+            Password: <input type="password" name="password"> <br>
+            <input type="submit">
+        </form>
+
+        <?php
+            echo $_POST["password"]; 
+        ?>
+    
+    </article>
+
 
 </body>
 </html>
