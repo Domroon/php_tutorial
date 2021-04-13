@@ -221,6 +221,18 @@
         ?>
     </article>
 
+    <article>
+    <h2>Functions</h2> 
+        <?php
+            function sayHi($name, $age){
+                echo "Hello $name, you are $age <br>";
+            }
+            sayHi("Domroon", 26);
+            sayHi("Hansi", 13);
+            sayHi("Gabi", 80);
+        ?>
+    </article>
+
 
 </body>
 </html>
