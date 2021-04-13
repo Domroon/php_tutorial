@@ -243,6 +243,27 @@
         ?>
     </article>
 
+    <article>
+    <h2>If Statements</h2> 
+        <?php
+            $isMale = true;
+            $isTall = true;
+            if($isMale && $isTall){
+                echo "You are a tall male";
+            }
+            elseif($isMale && !$isTall){
+                echo "You are a not tall male";
+            }
+            elseif(!$isMale && !$isTall){
+                echo "You are not male and not tall";
+            }
+            else {
+                echo "You are not male but tall";
+            }
+
+        ?>
+    </article>
+
 
 </body>
 </html>
