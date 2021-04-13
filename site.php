@@ -233,6 +233,16 @@
         ?>
     </article>
 
+    <article>
+    <h2>Return Statements</h2> 
+        <?php
+            function cube($num){
+                return $num * $num * $num;
+            }
+            echo cube(2);
+        ?>
+    </article>
+
 
 </body>
 </html>
