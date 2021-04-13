@@ -354,7 +354,11 @@
             $title = "My first Post";
             $author = "Domroon";
             $wordCount = 400;  
-            include "article-header.php";
+            include "article-header.php"; //put the varibles before in this
+
+            include "usefull-tools.php";
+            sayBye("Domroon"); //from usefull-tools.php
+            echo $feetInMile; //from usefull-tools.php
         ?>       
     </article>
 
