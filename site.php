@@ -362,5 +362,30 @@
         ?>       
     </article>
 
+    <article>
+    <h2>Classes and Objects</h2> 
+        <?php
+            class Book {
+                var $title;
+                var $author;
+                var $pages;
+            }
+
+            $book1 = new Book;
+            $book1->title = "Lord of the Rings";
+            $book1->author = "Tolkien";
+            $book1->pages = 700;
+
+            $book2 = new Book;
+            $book2->title = "Harry Potter";
+            $book2->author = "JK Rowling";
+            $book2->pages = 400;
+
+            echo "$book1->author <br>";
+            echo $book2->author;
+
+        ?>       
+    </article>
+
 </body>
 </html>
