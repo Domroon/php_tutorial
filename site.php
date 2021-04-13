@@ -203,6 +203,24 @@
         ?>
     </article>
 
+    <article>
+    <h2>Associative Arrays</h2> 
+        <form action="site.php" method="post"> 
+            Name: <input type="text" name="student"> <br>
+            <input type="submit">
+        </form>
+        <?php
+            $grades = array("Jim"=>"A+", "Pam"=>"B-", "Oscar"=>"C+");
+            $grades["Jim"] = "F";
+            echo $grades["Oscar"];
+            echo "<br>";
+            echo count($grades);
+            echo "<br>";
+            echo "This is your grade:";
+            echo $grades[$_POST["student"]];
+        ?>
+    </article>
+
 
 </body>
 </html>
