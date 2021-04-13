@@ -323,6 +323,22 @@
         ?>
     </article>
 
+    <article>
+    <h2>For Loops</h2> 
+        <?php
+           for($i=1; $i<=9; $i++) {
+               echo "$i <br>";
+           }
+
+           echo "<br>";
+
+           $luckynumbers = array(4, 8, 14, 16, 23, 42);
+           for($i=0; $i <= count($luckynumbers); $i++) {
+               echo "$luckynumbers[$i] <br>";
+           }
+        ?>
+    </article>
+
 
 </body>
 </html>
