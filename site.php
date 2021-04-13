@@ -264,6 +264,22 @@
         ?>
     </article>
 
+    <article>
+    <h2>If Statements 2</h2> 
+        <?php
+            function getMax($num1, $num2){
+                if($num1 >= $num2){
+                    return $num1;
+                }
+                else {
+                    return $num2;
+                }
+            }
+
+            echo getMax(42, 43);
+        ?>
+    </article>
+
 
 </body>
 </html>
