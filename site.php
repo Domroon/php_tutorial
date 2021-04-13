@@ -177,5 +177,19 @@
     </article>
 
 
+    <article>
+    <h2>Arrays</h2> 
+        <?php
+            $friends = array("Kevin", "Karen", "Oscar", "Jim");
+            $friends[4] = "Angela";
+            echo $friends[0];
+            echo "<br>";
+            echo $friends[2];
+            echo "<br>";
+            echo count($friends);
+        ?>
+    </article>
+
+
 </body>
 </html>
