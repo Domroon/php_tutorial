@@ -176,7 +176,6 @@
     
     </article>
 
-
     <article>
     <h2>Arrays</h2> 
         <?php
@@ -187,6 +186,20 @@
             echo $friends[2];
             echo "<br>";
             echo count($friends);
+        ?>
+    </article>
+
+    <article>
+    <h2>Using Checkboxes</h2> 
+        <form action="site.php" method="post"> 
+            Apples: <input type="checkbox" name="fruits[]" value="apples"><br>
+            Oranges: <input type="checkbox" name="fruits[]" value="oranges"><br>
+            Pears: <input type="checkbox" name="fruits[]" value="pears"><br>
+            <input type="submit">
+        </form>
+        <?php
+            $fruits = $_POST["fruits"];
+            echo $fruits[1];
         ?>
     </article>
 
