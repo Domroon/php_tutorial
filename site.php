@@ -387,5 +387,29 @@
         ?>       
     </article>
 
+    <article>
+    <h2>Constructors</h2> 
+        <?php
+            class Book2 {
+                var $title;
+                var $author;
+                var $pages;
+            
+
+                function __construct($aTitle, $aAuthor, $aPages){
+                    $this->title = $aTitle;
+                    $this->author = $aAuthor;
+                    $this->pages = $aPages;
+                }
+            }
+
+            $book1 = new Book2("Lord of the Rings", "Tolkien", 700);
+            $book2 = new Book2("Harry Potter", "JK Rowling", 400);
+            echo "$book1->author <br>";
+            echo "$book2->title <br>";
+
+        ?>       
+    </article>
+
 </body>
 </html>
