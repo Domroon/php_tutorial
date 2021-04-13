@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>PHP Tutorial</title>
 </head>
 <body>
     <?php
@@ -347,7 +348,15 @@
         
     </article>
 
-
+    <article>
+    <h2>Including php</h2> 
+        <?php
+            $title = "My first Post";
+            $author = "Domroon";
+            $wordCount = 400;  
+            include "article-header.php";
+        ?>       
+    </article>
 
 </body>
 </html>
