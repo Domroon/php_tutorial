@@ -306,6 +306,23 @@
         ?>
     </article>
 
+    <article>
+    <h2>While Loops</h2> 
+        <?php
+           $index = 1;
+           while($index <= 5){
+                echo "$index <br>";
+                $index++;
+           }
+           $index = 1;
+           do {
+                echo "$index <br>";
+                $index++;
+           } while($index <= 5);
+       
+        ?>
+    </article>
+
 
 </body>
 </html>
