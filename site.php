@@ -280,6 +280,32 @@
         ?>
     </article>
 
+    <article>
+    <h2>Switch Statements</h2> 
+    <form action="site.php" method="post"> 
+            <h3>Whats was your grade?</h3>
+            <input type="text" name="grade"> <br>
+            <input type="submit">
+        </form>
+        <?php
+            $grade = $_POST["grade"];
+            switch($grade){
+                case "A":
+                    echo "You did amazing!";
+                    break;
+                case "B":
+                    echo "You did pretty good!";
+                    break;
+                case "F":
+                    echo "You fail";
+                    break;
+                default:
+                    echo "Not a valid grade :(";
+                    break;
+            }
+        ?>
+    </article>
+
 
 </body>
 </html>
