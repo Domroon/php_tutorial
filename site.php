@@ -339,6 +339,15 @@
         ?>
     </article>
 
+    <article>
+    <h2>Including html</h2> 
+        <?php include "header.html" ?>    
+        <p>Hello World</p>
+        <?php include "footer.html" ?>
+        
+    </article>
+
+
 
 </body>
 </html>
