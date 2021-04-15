@@ -479,5 +479,43 @@
         ?>       
     </article>
 
+    <article>
+    <h2>Inheritance</h2> 
+        <?php
+            class Chef {
+                function makeChicken(){
+                    echo "The chef makes chicken <br>";
+                }
+
+                function makeSalad(){
+                    echo "The chef makes salad <br>";
+                }
+
+                function makeSpecialDish(){
+                    echo "The chef makes bbq ribs <br>";
+                }
+            }
+
+            class ItalianChef extends Chef{
+                function makeSpecialDish(){ //Override the enherited function
+                    echo "The chef makes chicken parm <br>";
+                }
+
+                function makePasta(){
+                    echo "The Chef makes pasta <br>";
+                }
+            }
+
+            $chef = new Chef();
+            $chef->makeChicken();
+            $chef->makeSpecialDish();
+
+            $italianChef = new ItalianChef();
+            $italianChef->makeSalad();
+            $italianChef->makePasta();
+            $italianChef->makeSpecialDish();
+        ?>       
+    </article>
+
 </body>
 </html>
